@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Object Detection with TensorFlow.js</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <h1>Your Robot's Vision</h1>
+   <p>Activate the camera below to see what your robot detects!</p>
+  
+   <div id="liveView" class="container">
+     <button id="webcamButton">Enable Robot Vision</button>
+     <video id="webcam" autoplay muted playsinline></video>
+   </div>
+   <footer>
+     <p>Created by:[your Name]</p>
+   </footer>
+  
+   <!-- TensorFlow.js Library -->
+   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+   <script src="script.js"></script>
+   
+ </body>
+</html>
